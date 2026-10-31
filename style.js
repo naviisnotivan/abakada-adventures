@@ -297,3 +297,61 @@ document.querySelectorAll(".mode-btn").forEach(button => {
 
 // Start the website
 createDeck(alphabet);
+
+/* Center the entire website */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep the website content centered */
+.container {
+  width: min(100% - 32px, 650px);
+  margin: 0 auto;
+}
+
+/* Center the flashcard and its contents */
+.learning-area {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flashcard {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Center the buttons */
+.controls {
+  justify-content: center;
+}
+
+.shuffle-btn {
+  display: block;
+  margin: 18px auto 0;
+}
+
+.learning-area {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flashcard {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.controls {
+  justify-content: center;
+}
+
+.shuffle-btn {
+  margin: 18px auto 0;
+}
+
+.mascot-message {
+  justify-content: center;
+  text-align: center;
+}
