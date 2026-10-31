@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abakada Adventures</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-decoration star-one">✦</div>
+  <div class="background-decoration star-two">✧</div>
+  <div class="background-decoration flower-one">🌼</div>
+  <div class="background-decoration flower-two">🌸</div>
+
+  <main class="container">
+    <header class="header">
+      <div class="mascot">🐻</div>
+      <h1>Abakada Adventures</h1>
+      <p class="subtitle">Learn Filipino with Fun!</p>
+      <p class="welcome">Hi, little learner! Ready to play? 🌈</p>
+    </header>
+
+    <nav class="mode-selector">
+      <button class="mode-btn active" data-mode="alphabet">
+        🔤 Alphabet
+      </button>
+
+      <button class="mode-btn" data-mode="syllables">
+        📚 Syllables
+      </button>
+
+      <button class="mode-btn" data-mode="quiz">
+        ⭐ Quiz Time
+      </button>
+    </nav>
+
+    <section class="learning-area">
+      <div class="progress-container">
+        <span id="progress-text">Card 1 of 20</span>
+        <div class="progress-track">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="flashcard" id="flashcard">
+        <div class="card-decoration decoration-top">✦</div>
+        <div class="card-decoration decoration-bottom">♥</div>
+
+        <span class="card-label" id="card-label">VOWEL</span>
+        <h2 id="card-content">A</h2>
+        <p id="card-message">A is for Abakada!</p>
+      </div>
+
+      <div class="controls" id="flashcard-controls">
+        <button class="control-btn previous" id="previous-btn">
+          ← Previous
+        </button>
+
+        <button class="control-btn sound" id="sound-btn" aria-label="Hear pronunciation">
+          🔊
+        </button>
+
+        <button class="control-btn next" id="next-btn">
+          Next →
+        </button>
+      </div>
+
+      <button class="shuffle-btn" id="shuffle-btn">
+        🔀 Shuffle Cards
+      </button>
+
+      <section class="quiz-area hidden" id="quiz-area">
+        <p class="quiz-question">Which syllable do you hear?</p>
+        <div class="quiz-choices" id="quiz-choices"></div>
+        <p id="quiz-feedback" aria-live="polite"></p>
+        <button class="control-btn next hidden" id="next-question">
+          Next Question →
+        </button>
+      </section>
+
+      <div class="mascot-message" id="mascot-message">
+        <span>🐰</span>
+        <p>You're doing great! Keep learning!</p>
+      </div>
+    </section>
+
+    <footer>
+      Made with 💖 for little Filipino learners
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
